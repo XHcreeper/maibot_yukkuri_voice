@@ -23,6 +23,5 @@
   "capabilities": ["send.custom"],
   "i18n": {
     "default_locale": "zh-CN"
-  },
-  "plugin_type": ["tool", "game"]
+  }
 }
