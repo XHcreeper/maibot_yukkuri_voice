@@ -20,7 +20,34 @@
     "min_version": "1.0.0",
     "max_version": "2.99.99"
   },
-  "capabilities": ["send.custom"],
+  "dependencies": [
+    {
+      "type": "python_package",
+      "name": "aquestalk_python",
+      "version_spec": ">=1.1"
+    },
+    {
+      "type": "python_package",
+      "name": "cn2an",
+      "version_spec": ">=0.5.24"
+    },
+    {
+      "type": "python_package",
+      "name": "e2k",
+      "version_spec": ">=0.6.2"
+    },
+    {
+      "type": "python_package",
+      "name": "pysilk",
+      "version_spec": ">=0.0.1"
+    },
+    {
+      "type": "python_package",
+      "name": "regex",
+      "version_spec": ">=2026.7.19"
+    }
+  ],
+  "capabilities": ["send.text", "send.custom"],
   "i18n": {
     "default_locale": "zh-CN"
   }

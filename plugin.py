@@ -92,7 +92,7 @@ class YukkuriVoicePlugin(MaiBotPlugin):
         try:
             self.aq = aquestalk.load_from_path(os.path.join(self.plugin_dir, self.config.voice.aquestalk_dll_path), "f1", check_voice_type=True)
         except Exception:
-            self.ctx.error("Yukkuri语音在加载AquesTalk.dll文件时失败，请查看插件README.md以获取缺失的AquesTalk.dll。")
+            self.ctx.logger.error("Yukkuri语音在加载AquesTalk.dll文件时失败，请查看插件README.md以获取缺失的AquesTalk.dll。")
         self.converter = Converter(os.path.join(self.plugin_dir, self.config.voice.mapping_path))
 
 
@@ -137,7 +137,7 @@ class YukkuriVoicePlugin(MaiBotPlugin):
                 # 合成并发送语音
                 try:
                     await self._synthesize_and_send(original_text, session_id)
-                    self.ctx.send.original_text(self.config.message.original_message_format.replace("{original_text}", original_text))
+                    self.ctx.send.text(self.config.message.original_message_format.replace("{original_text}", original_text))
                     return {"action": "abort"}
                 except Exception as e:
                     self.ctx.logger.error(f"合成并发送Yukkuri语音失败：{e}")
