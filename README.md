@@ -21,11 +21,13 @@
 
 ## 环境要求
 **目前仅支持 Windows 环境（或能加载dll文件的环境）**
+需安装 `requirements.txt` 中的依赖包
 
 ## 使用指南
-1. 前往[「株式会社アクエスト」官网下载页](https://www.a-quest.com/download.html)获取 `AquesTalk1` 对应自己系统架构与特定音色的 `AquesTalk.dll` 文件
-2. 调整配置文件中的 `aquestalk_dll_path` 配置项为你的 `AquesTalk.dll` 的位置
-3. 应该能用了
+1. 使用`pip install -r requirements.txt` 或其他方式安装依赖包
+2. 前往[「株式会社アクエスト」官网下载页](https://www.a-quest.com/download.html)获取 `AquesTalk1` 对应自己系统架构与特定音色的 `AquesTalk.dll` 文件
+3. 调整配置文件中的 `aquestalk_dll_path` 配置项为你的 `AquesTalk.dll` 的位置
+4. 应该能用了
 
 ## 其他
 - 感谢[zh-yukkuri.js](https://github.com/Love-Kogasa/zh-yukkuri.js)项目提供的参考
