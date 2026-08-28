@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "id": "XHC.maibot_yukkuri_voice",
+  "version": "0.3.0",
+  "name": "油库里语音",
+  "description": "让你的麦麦能发送油库里语音（暂时仅支持Windows环境）",
+  "author": {
+    "name": "XH_creeper",
+    "url": "https://github.com/XHcreeper"
+  },
+  "license": "MIT",
+  "urls": {
+    "repository": "https://github.com/XHcreeper/maibot_yukkuri_voice"
+  },
+  "host_application": {
+    "min_version": "1.0.0",
+    "max_version": "1.99.99"
+  },
+  "sdk": {
+    "min_version": "1.0.0",
+    "max_version": "2.99.99"
+  },
+  "capabilities": ["send.custom"],
+  "i18n": {
+    "default_locale": "zh-CN"
+  },
+  "plugin_type": ["tool", "game"]
+}
